@@ -13,7 +13,7 @@ const addToTarget = (...directories) => {
   });
 };
 
-const createDestinationDirectory = (targetDirectory) => `${destination}\\${targetDirectory.split('src\\public\\').slice(-1).toString()}`;
+const createDestinationDirectory = (targetDirectory) => `${destination}/${targetDirectory.split('src/public/').slice(-1).toString()}`;
 
 const getExtension = (file) => {
   try {
