@@ -1,0 +1,65 @@
+@media screen and (min-width: 340px) {
+  .add-review__form button{
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 650px){
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+
+  .restaurant .restaurant__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__menus {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__reviews {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .add-review {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+}
+
+@media screen and (min-width: 700px) {
+  .restaurants {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .restaurant-item__header {
+    height: 25vw;
+  }
+  .restaurant-item__description {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .restaurants {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .restaurant-item__header {
+    height: 15vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
