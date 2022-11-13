@@ -1,5 +1,4 @@
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-restaurants-idb';
-import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
 import * as TestFactories from './helpers/testFactories';
 
 describe('Liking A Restaurant', () => {
