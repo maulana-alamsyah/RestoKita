@@ -6,6 +6,7 @@ const images = path.resolve(__dirname, 'src/public/images');
 const heros = path.resolve(__dirname, 'src/public/images/heros');
 const destination = path.resolve(__dirname, 'dist/');
 const target = [];
+let createDestinationDirectory = null;
 
 const addToTarget = (...directories) => {
   directories.forEach((directory) => {
@@ -13,7 +14,11 @@ const addToTarget = (...directories) => {
   });
 };
 
-const createDestinationDirectory = (targetDirectory) => `${destination}\\${targetDirectory.split('src\\public\\').slice(-1).toString()}`;
+if (process.platform === 'win32') {
+  createDestinationDirectory = (targetDirectory) => `${destination}\\${targetDirectory.split('src\\public\\').slice(-1).toString()}`;
+} else {
+  createDestinationDirectory = (targetDirectory) => `${destination}/${targetDirectory.split('src/public/').slice(-1).toString()}`;
+}
 
 const getExtension = (file) => {
   try {

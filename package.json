@@ -9,6 +9,7 @@
     "build-image": "node sharp.js",
     "serve": "http-server dist -p 4321 -g",
     "build-serve": "npm run build && npm run build-image && npm run serve",
+    "publish": "npm run build && npm run build-image",
     "test": "karma start",
     "e2e": "codeceptjs run --steps"
   },
