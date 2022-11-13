@@ -6,7 +6,7 @@ const Restaurants = {
     return `
             <section class="content">
                 <div class="explore">
-                    <h2 class="explore__label">Eplore Restaurant</h2>
+                    <h2 class="explore__label">Explore Restaurant</h2>
                     <div class="restaurants"></div>
                 </div>
             </section>
