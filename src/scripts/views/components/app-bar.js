@@ -56,8 +56,8 @@ class AppBar extends HTMLElement {
             background: transparent;
             color: #fff;
             border: 0;
-            min-height: $touch;
-            min-width: $touch;
+            min-height: 44px;
+            min-width: 44px;
             font-size: 25px;
             display: flex;
             justify-content: center;
